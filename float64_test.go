@@ -2,7 +2,7 @@ package goptionals
 
 import "testing"
 
-func TestFloats(t *testing.T) {
+func TestFloats64(t *testing.T) {
 	b := Float64(1.5)
 	if Float64Value(b) != 1.5 {
 		t.Fatal()
