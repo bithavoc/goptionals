@@ -7,7 +7,7 @@ func Duration(v time.Duration) *time.Duration {
 	return &v
 }
 
-// DurationValue returns the value of the time.Duration pointer passed in or time.Duration{} if the pointer is nil.
+// DurationValue returns the value of the time.Duration pointer passed in or time.Duration(0) if the pointer is nil.
 func DurationValue(v *time.Duration) time.Duration {
 	if v != nil {
 		return *v
